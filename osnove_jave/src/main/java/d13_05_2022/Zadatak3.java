@@ -7,7 +7,7 @@ package d13_05_2022;
 //        Commitujte zadatak i pushujte na github sa porukom
 //        Domaci 13.05.2022 Zadatak 3 brisanje iz niza“
 
-import jdk.swing.interop.SwingInterOpUtils;
+
 
 import java.util.ArrayList;
 import java.util.Random;
