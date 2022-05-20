@@ -13,7 +13,7 @@ public class MainProizvod {
         System.out.println("Cena sa popustom je: " + p1.vratiCenuSaPopustom(5));
         System.out.println("Postarina je: " + p1.racunajPostarinu());
         p2.naziv = "Sampon";
-        p2.cena = 210;
+        p2.cena = 211;
         p2.tezina = 250;
         p2.stampaj();
         p2.povecajCenu(10);
