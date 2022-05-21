@@ -21,6 +21,14 @@ public class FaceBookPost {
     String text;
     int lajkovi;
     int deljenja;
+    public FaceBookPost(String objavioc, String objavljenioc, String text) {
+        this.objavioc = objavioc;
+        this.objavljenioc = objavljenioc;
+        this.text = text;
+    }
+    public FaceBookPost(){
+
+    }
     public void like(){
         this.lajkovi++;
     }
@@ -36,6 +44,6 @@ public class FaceBookPost {
     public void stampaj(){
         System.out.println(this.objavioc + " >>> " + this.objavljenioc);
         System.out.println(this.text);
-        System.out.println("Likes (" + this.lajkovi + ")  |  Shares (" + deljenja + ")");
+        System.out.println("Likes ( " + this.lajkovi + " )  |  Shares ( " + deljenja + " )");
     }
 }
