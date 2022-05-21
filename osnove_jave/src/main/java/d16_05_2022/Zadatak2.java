@@ -14,6 +14,7 @@ public class Zadatak2 {
         System.out.println("Novonastali broj je " +cifranje(prvi,drugi));
     }
     static int cifranje(int a,int b){
+
         return 10*a+b;
     }
 }

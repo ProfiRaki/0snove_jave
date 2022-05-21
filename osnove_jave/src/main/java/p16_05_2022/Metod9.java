@@ -7,7 +7,7 @@ package p16_05_2022;
 
 public class Metod9 {
     public static void main(String[] args) {
-        System.out.println(konverzija(5,USD));
+        System.out.println(konverzija(5,"USD"));
     }
     static double konverzija(double eur,String valuta){
         if(valuta.equals("RSD"))
