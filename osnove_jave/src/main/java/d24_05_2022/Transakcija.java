@@ -35,14 +35,14 @@ public class Transakcija {
     private double provizija(double visinaTransakcije){
         return visinaTransakcije > 4500 ? visinaTransakcije * 0.01 : 45;
     }
-    public void izvrsiTransakciju(double visinaTransakcija, Racun uplatioc, Racun primaoc){
+    public void izvrsiTransakciju(double visinaTransakcija){
         if( uplatioc.getTrenutnoStanje()<visinaTransakcija + provizija(visinaTransakcija))
             visinaTransakcija = uplatioc.getTrenutnoStanje() -
                     provizija(uplatioc.getTrenutnoStanje());
-        uplatioc.menjaStane(-(visinaTransakcija + provizija(visinaTransakcija)));
-        primaoc.menjaStane(visinaTransakcija);
-
+        this.uplatioc.menjaStane(-(visinaTransakcija + provizija(visinaTransakcija)));
+        this.primaoc.menjaStane(visinaTransakcija);
     }
+    // i u mainu t.izvrsiTransakciju(12000);
     public void stampaj(){
         System.out.println(idTransakcije);
         uplatioc.stampaj();
